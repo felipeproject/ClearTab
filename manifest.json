@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Leitor do localStorage",
+    "version": "1.0",
+    "description": "Acessa o localStorage da página e exibe no pop-up.",
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],  // Ou altere para URLs específicas
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

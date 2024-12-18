@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armazenamento Local</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        #clear-button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        #clear-button:hover {
+            background-color: #c0392b;
+        }
+        .key-value {
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+        .key-value:hover {
+            background-color: #f1f1f1;
+        }
+        .key {
+            font-weight: bold;
+        }
+        .value {
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>Armazenamento Local</h1>
+    <button id="clear-button">Limpar</button>
+    <div id="storage-content">
+        <p>Carregando...</p>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
